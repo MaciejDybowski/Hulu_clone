@@ -1,6 +1,7 @@
 import React from 'react'
 import './Nav.css'
 import requests from '../api/request'
+import PropTypes from 'prop-types'
 
 function Nav({setSelectedOption}) {
     return (
@@ -18,6 +19,14 @@ function Nav({setSelectedOption}) {
             <h2 onClick = {() => setSelectedOption(requests.fetchTV)}>Movie</h2>
         </div>
     )
+}
+
+Nav.propTypes = {
+    setSelectedOption : PropTypes.func
+}
+
+Nav.defaultProps = () => {
+    console.log("Coś poszło nie tak z przekazaniem funkcji hooka");
 }
 
 export default Nav

@@ -9,11 +9,14 @@
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "axios": "^0.20.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-flip-move": "^3.0.4",
     "react-flip-toolkit": "^7.0.12",
     "react-scripts": "3.4.3",
+    "react-test-renderer": "^16.13.1",
     "react-text-truncate": "^0.16.0"
   },
   "scripts": {

@@ -3,7 +3,7 @@ import './Results.css'
 import VideoCard from './VideoCard'
 import axios from '../api/axios'
 import FlipMove from 'react-flip-move'
-
+import PropTypes from 'prop-types'
 
 function Results({ selectedOption }) {
     const [movies, setMovies] = useState([]);
@@ -26,6 +26,14 @@ function Results({ selectedOption }) {
 
         </div>
     )
+}
+
+Results.propTypes = {
+    selectedOption : PropTypes.string
+}
+
+Results.defaultProps = {
+    selectedOption : "/trending/all/week?api_key=3da30279a3d8d1dbed1bde98ef8521ad&language=en-US"
 }
 
 export default Results
